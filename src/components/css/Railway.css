@@ -1,0 +1,6 @@
+.Railway_body {
+    width: 414px;
+    background-color: aqua;
+}
+
+@media(min-witdh:414px) {}
