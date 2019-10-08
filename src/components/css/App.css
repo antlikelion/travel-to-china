@@ -9,14 +9,6 @@
   justify-content: center;
 }
 
-.train {
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  top: 300px;
-  left: 537px;
-}
-
 .body {
   display: flex;
   flex-direction: column;

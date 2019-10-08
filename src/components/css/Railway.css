@@ -1,30 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .Railway_body {
-    width: 414px;
-    height: 700px;
-    background-image: linear-gradient(to right, #fad0c4 0%, #ffd1ff 100%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 414px;
+  height: 700px;
+  /* background-image: linear-gradient(to right, #c1dfc4 0%, #deecdd 100%); */
+  /* background-image: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%); */
+  /* background-image: linear-gradient(
+    to left,
+    #bdc2e8 0%,
+    #bdc2e8 1%,
+    #e6dee9 100%
+  ); */
+  background: linear-gradient(to left, #84fab0 0%, #8fd3f4 100%);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  -moz-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+  /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+  /* background-image: linear-gradient(to right, #fad0c4 0%, #ffd1ff 100%); */
+  /* background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 100%); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .platform {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  left: 100px;
 }
 
 .arrange_track {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-
+.train {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  transform: translateX(6%) translateY(450%);
+  z-index: 1;
+}
 .track {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
-@media(min-witdh:414px) {}
+@media (min-witdh: 414px) {
+}

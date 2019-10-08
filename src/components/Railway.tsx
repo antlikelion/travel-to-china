@@ -8,6 +8,7 @@ const Railway: React.FC = () => {
   return (
     <div className="Railway_body">
       <div className="arrange_track">
+        <Platform className="platform" />
         <Train className="train" />
         <Track className="track" />
         <Track className="track" />
@@ -17,7 +18,6 @@ const Railway: React.FC = () => {
         <Track className="track" />
         <Track className="track" />
       </div>
-      <Platform className="platform" />
       {/* <div>
         Icons made by{" "}
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
