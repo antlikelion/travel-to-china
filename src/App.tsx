@@ -5,7 +5,16 @@ import "./components/css/App.css";
 const App: React.FC = () => {
   return (
     <div className="whole">
-      <Railway />
+      <div className="body">
+        <Railway />
+        <Railway />
+        <Railway />
+        <Railway />
+        <Railway />
+        <Railway />
+        <Railway />
+        <Railway />
+      </div>
     </div>
   );
 };

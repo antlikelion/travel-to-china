@@ -1,7 +1,26 @@
-.whole {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media(min-witdh:414px) {}
+.whole {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.train {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  top: 300px;
+  left: 537px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-witdh: 414px) {
+}
