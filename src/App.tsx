@@ -1,30 +1,18 @@
 import React from "react";
-import Railway from "./components/Railway";
 import "./components/css/App.css";
+import { Route, Switch } from "react-router-dom";
+import Rail from "./components/Rail";
+import Start from "./components/Start";
+import Station from "./components/Station";
 
 const App: React.FC = () => {
   return (
-    <div className="whole">
-      <div className="body">
-        <Railway />
-        <Railway />
-        <Railway />
-        <Railway />
-        <Railway />
-        <Railway />
-        <Railway />
-        <Railway />
-      </div>
-      {/* <div>
-        Icons made by{" "}
-        <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-          Freepik
-        </a>{" "}
-        from{" "}
-        <a href="https://www.flaticon.com/" title="Flaticon">
-          www.flaticon.com
-        </a>
-      </div> */}
+    <div>
+      <Route exact path="/" component={Start} />
+      <Switch>
+        <Route path="/railway/:destination" component={Station} />
+        <Route path="/railway" component={Rail} />
+      </Switch>
     </div>
   );
 };
